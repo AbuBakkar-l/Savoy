@@ -136,6 +136,9 @@
     }
     /* product items */
     /* filter_menu */
+    .filter_menu{
+        display: none;
+    }
     .filter_menu-title > h5{
         margin: 0;
         margin-bottom: 10px;
@@ -221,6 +224,7 @@
         text-align: center;
     }
     .filter-result{
+        display: none;
         margin-bottom: 20px;
     }
 .filter-result ul{

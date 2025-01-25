@@ -5,4 +5,7 @@ $(document).ready(function () {
   $("#search-close").click(function () {
     $(".content").hide();
   });
+  $('#filter_button').click(function(){
+    $('.filter_menu').toggle();
+  })
 });

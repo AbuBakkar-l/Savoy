@@ -81,6 +81,58 @@ header {
   position: relative;
   top: -7px;
 }
+/* cart  */
+.cart-content{
+  padding: 20px;
+  height: 100vh;
+  background-color: #333;
+  width: 410px;
+  position: fixed;
+  z-index: 111111111;
+  right: 0;
+  top: 0;
+  right: -100%;
+  transition: all 0.5s ease-in-out;
+}
+.cart-btn{
+  border-bottom: 1px solid #464646;
+  padding-right: 15px;
+  padding-top: 7px;
+  padding-bottom: 24px;
+}
+.cart-btn > button{
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 15px;
+}
+.empty{
+  text-align: center;
+  padding: 28px 0px;
+  color: #eee;
+}
+.empty > i {
+  display: block;
+  font-size: 20px;
+  line-height: 29px;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 21px;
+  padding: 10px;
+  border-radius: 50px;
+  background-color: rgba(238, 238, 238, 0.09);
+}
+.continue-shopping{
+  padding: 12px;
+  border: 1px solid #aaa;
+  background-color: transparent;
+  width: 90%;
+  color: #eee;
+  position: absolute;
+  bottom: 29px;
+  left: 21px;
+}
 /* logIn page  */
 #popup {
     position: fixed;

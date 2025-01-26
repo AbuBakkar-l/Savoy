@@ -9,14 +9,29 @@ $(document).ready(function () {
     $('.filter_menu').toggle();
   });
   $("#popup-trigger").click(function () {
-    $("#popup").show(); // Show the popup
+    $("#popup").show();
+});
+$(".close").click(function () {
+    $("#popup").hide(); 
+});
+  // cart 
+  let isVisible = false;
+  $("#trigger-cart").click(function () {
+      const content = $(".cart-content");
+      if (!isVisible) {
+        content.css("right", "0px" ); 
+          isVisible = true;
+      } else {
+        content.css("right", "-300px" ); 
+          isVisible = false;
+      }
+  });
+  $("#cart-close").click(function () {
+    $('.cart-content').hide('fast');
+    // const content = $(".cart-content");
+    //   content.css("right", "-300px" ); 
+    }
+  );
 });
 
-// Bind the close button click event outside of the trigger
-$(".close").click(function () {
-  console.log("Close button clicked");
-    $("#popup").hide(); // Hide the popup
-});
-  
-});
 

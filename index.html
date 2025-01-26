@@ -110,10 +110,13 @@
           <div class="">
             <ul class="right-btn">
               <li class="nav-item">
-                <a href="#"><i class="far fa-heart text-dark"></i></a>
+                <a href="#">
+                  <i class="far fa-heart text-dark">
+                  </i>
+                </a>
               </li>
               <li class="nav-item">
-                <a  href="#"> Sign In </a>
+                <a href="#" id="popup-trigger"> Sign In </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#"
@@ -124,10 +127,37 @@
             </ul>
           </div>
         </div>
-      </div> 
-
+      </div>
     </header>
-    <section class="position-relative" style="top: 80px; margin-bottom: 100px">
+    <!-- login page  -->
+    <div class="logIn-wrapper">
+      <div id="popup">
+        <div class="popup-content">
+            <div class="close">
+              <i class="fas fa-xmark"></i>
+          </div>
+            <h2>Sign In</h2>
+            <label for="text">Username or email address *</label>
+            <input type="text" id="username" >
+            <label for="password" > Password </label>
+            <input type="password" id="password">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <label class="p-0">
+                  <input type="checkbox" id="rememberMe"> Remember me
+              </label>
+              <a href="#" id="forgotPassword" >Lost your password?</a>
+            </div>
+            <button class="submit-btn">Sign In</button>
+            <div class="divider-main">
+              <p class="divider">or</p>
+            </div>
+            <button class="transparent-btn">Create an account</button>
+        </div>
+    </div>
+    </div>
+    
+  <!-- hero-section  -->
+  <section class="position-relative" style="top: 80px; margin-bottom: 100px">
       <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
           <button
@@ -201,7 +231,7 @@
       </div>
     </section>
     <!-- product section -->
-    <div class="container-fluid ">
+    <div class="container-fluid">
       <div class="row justify-content-center py-5 shop-menu">
         <div class="col-10 p-0">
           <div class="row align-items-center">
@@ -227,12 +257,12 @@
           </div>
         </div>
         <div class="col-2 p-0">
-          <div class="row align-items-center  justify-content-end">
+          <div class="row align-items-center justify-content-end">
             <div class="col-auto">
               <a href="#" id="filter_button">Filter</a>
             </div>
             <div class="col-auto text-muted">/</div>
-            <div class="col-auto position-relative" >
+            <div class="col-auto position-relative">
               <button
                 class="btn p-0 text-secondary"
                 style="font-size: 18px"
@@ -286,7 +316,6 @@
                 </a>
               </li>
               <li>
-                
                 <a href="#">
                   <i class="color brown"></i>
                   Brown
@@ -295,7 +324,8 @@
               <li>
                 <a href="#">
                   <i class="color green"></i>
-                  Green</a>
+                  Green</a
+                >
               </li>
               <li>
                 <a href="#">
@@ -402,16 +432,12 @@
         <div class="col-3 position-relative mb-3">
           <div class="product-item">
             <div class="color">
-              <a href="#" style="background-color: #736751;">
-              </a>
-              <a href="#" style="background-color: #c0c0c0;">
-              </a>
-              <a href="#" style="background-color: white;">
-              </a>
+              <a href="#" style="background-color: #736751"> </a>
+              <a href="#" style="background-color: #c0c0c0"> </a>
+              <a href="#" style="background-color: white"> </a>
             </div>
             <div>
-              <a href="#"><img src="/images/lam.jpg" alt="lamb" />
-              </a>
+              <a href="#"><img src="/images/lam.jpg" alt="lamb" /> </a>
             </div>
             <div class="product-item-overlay">
               <img src="/images/lam-xs.jpg" alt="" />
@@ -431,7 +457,9 @@
         <div class="col-3 position-relative mb-3">
           <div class="product-item">
             <div>
-              <a href="#"><img src="/images/lighthouse.jpg" alt="Lighthouse Lantern" /></a>
+              <a href="#"
+                ><img src="/images/lighthouse.jpg" alt="Lighthouse Lantern"
+              /></a>
             </div>
             <div class="product-item-overlay">
               <img src="/images/lighthouse2.jpg" alt="" />
@@ -451,13 +479,13 @@
         <div class="col-3 position-relative mb-3">
           <div class="product-item">
             <div class="color">
-              <a href="#" style="background-color: #05ac92;">
-              </a>
-              <a href="#" style="background-color: #dc9814;">
-              </a>
+              <a href="#" style="background-color: #05ac92"> </a>
+              <a href="#" style="background-color: #dc9814"> </a>
             </div>
             <div>
-              <a href="#"><img src="/images/wall-Clock-yellow.jpg" alt="clock" /></a>
+              <a href="#"
+                ><img src="/images/wall-Clock-yellow.jpg" alt="clock"
+              /></a>
             </div>
             <div class="product-item-overlay">
               <img src="/images/wall-clock.jpg" alt="" />
@@ -477,7 +505,9 @@
         <div class="col-3 position-relative mb-3">
           <div class="product-item">
             <div>
-              <a href="#"><img src="/images/bagFront.jpg" alt="Hans Backpack" /></a>
+              <a href="#"
+                ><img src="/images/bagFront.jpg" alt="Hans Backpack"
+              /></a>
             </div>
             <div class="product-item-overlay">
               <img src="/images/bagBackSide.jpg" alt="" />
@@ -497,7 +527,9 @@
         <div class="col-3 position-relative mb-3">
           <div class="product-item">
             <div>
-              <a href="#"><img src="/images/glass.jpg" alt="Specs Sunglasses" /></a>
+              <a href="#"
+                ><img src="/images/glass.jpg" alt="Specs Sunglasses"
+              /></a>
             </div>
             <div class="product-item-overlay">
               <img src="/images/Glass2.jpg" alt="" />
@@ -517,13 +549,12 @@
         <div class="col-3 position-relative mb-3">
           <div class="product-item">
             <div class="color">
-              <a href="#" style="background-color: #1e73be;">
-              </a>
-              <a href="#" style="background-color: #c0c0c0;">
-              </a>
+              <a href="#" style="background-color: #1e73be"> </a>
+              <a href="#" style="background-color: #c0c0c0"> </a>
             </div>
             <div>
-              <a href="#"><img src="/images/CoffeMaker_blue.jpg" alt="CoffeMaker" />
+              <a href="#"
+                ><img src="/images/CoffeMaker_blue.jpg" alt="CoffeMaker" />
               </a>
             </div>
             <div class="product-item-overlay">
@@ -544,7 +575,9 @@
         <div class="col-3 position-relative mb-3">
           <div class="product-item">
             <div>
-              <a href="#"><img src="/images/doorbunper.jpg" alt="Door Bumper" /></a>
+              <a href="#"
+                ><img src="/images/doorbunper.jpg" alt="Door Bumper"
+              /></a>
             </div>
             <div class="product-item-overlay">
               <img src="/images/doorbunper2.jpgg" alt="" />
@@ -563,17 +596,17 @@
         </div>
       </div>
     </div>
-   
+
     <!-- loard more button -->
     <div class="load_more_btn">
       <a href="#" class="w-100 d-block">Loard More</a>
     </div>
- <!-- footer  -->
+    <!-- footer  -->
     <footer class="container-fluid footer">
       <div class="row">
         <div class="col-10 m-0 p-0">
           <ul class="d-flex gap-3">
-            <li >
+            <li>
               <a href="#">About Us</a>
             </li>
             <li>
@@ -590,10 +623,9 @@
             </li>
             <li>
               <a href="#">
-                <span>
-                  © By
-                </span>
-                NordicMad</a>
+                <span> © By </span>
+                NordicMad</a
+              >
             </li>
           </ul>
         </div>
@@ -601,9 +633,9 @@
           <ul class="d-flex gap-4 justify-content-end footer-social-icon">
             <li>
               <a href="#">
-              <i class="fab fa-facebook"></i>
-            </a>
-          </li>
+                <i class="fab fa-facebook"></i>
+              </a>
+            </li>
             <li>
               <a href="#">
                 <i class="fab fa-instagram"></i>

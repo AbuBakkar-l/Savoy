@@ -10,7 +10,8 @@
       rel="stylesheet"
     />
     <!-- icon  -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 
     <!-- Bootstrap 5 CSS -->
     <link
@@ -23,7 +24,7 @@
   <body>
     <!-- Navbar -->
     <header>
-      <div class="container-fluid">
+      <div class="container">
         <div class="inner-headaer">
           <div class="logo">
             <img src="/images/logo.png" alt="" />
@@ -133,8 +134,8 @@
       </div>
     </header>
     <!-- cart  -->
-    <!-- <div class="cart">
-      <div class="cart-content">
+    <div class="cart">
+      <div class="cart-content" style="display: none;">
         <div class="cart-btn text-end">
         <button class="cart-close">Close</button>
         </div>
@@ -146,10 +147,10 @@
           Continue shopping
         </button>
       </div>
-    </div> -->
+    </div>
     <!-- cart-shopping quntity -->
     <div class="cart">
-      <div class="cart-content">
+      <div class="showe_cart-conten" id="showe_cart-content" style="display: none;">
         <div class="cart-btn text-end">
         <button class="cart-close">Close</button>
         </div>
@@ -254,9 +255,8 @@
               class="d-block w-100"
               alt="..."
             />
-            <div class="position-absolute top-50 ps-5 hero-banner">
+            <div class="position-absolute  ps-5 hero-banner">
               <h1 class="banner-title">Contemporary Pendant Lighting</h1>
-
               <a href="#" class="banner-btn">decoration</a>
             </div>
           </div>
@@ -297,7 +297,7 @@
       </div>
     </section>
     <!-- product section -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row justify-content-center py-5 shop-menu">
         <div class="col-10 p-0">
           <div class="row align-items-center">
@@ -466,7 +466,7 @@
       </div>
     </div>
     <!-- product-items -->
-    <div class="container-fluid">
+    <div class="container">
       <div class="row">
         <div class="filter-result">
           <ul>
@@ -664,57 +664,64 @@
     </div>
 
     <!-- loard more button -->
-    <div class="load_more_btn">
-      <a href="#" class="w-100 d-block">Loard More</a>
-    </div>
+     <div class="container">
+
+       <div class="load_more_btn">
+         <a href="#" class="w-100 d-block">Loard More</a>
+       </div>
+     </div>
     <!-- footer  -->
     <footer class="container-fluid footer">
-      <div class="row">
-        <div class="col-10 m-0 p-0">
-          <ul class="d-flex gap-3">
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">FAQs</a>
-            </li>
-            <li>
-              <a href="#">Order Tracking</a>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
-            <li>
-              <a href="#">
-                <span> © By </span>
-                NordicMad</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="col-2 m-0 p-0">
-          <ul class="d-flex gap-4 justify-content-end footer-social-icon">
-            <li>
-              <a href="#">
-                <i class="fab fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-          </ul>
+      <div class="container">
+        <div class="row ">
+          <div class="col-10 m-0 p-0">
+            <ul class="d-flex gap-3">
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Blog</a>
+              </li>
+              <li>
+                <a href="#">FAQs</a>
+              </li>
+              <li>
+                <a href="#">Order Tracking</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">
+                  <span> © By </span>
+                  NordicMad</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-2 m-0 p-0">
+            <ul class="d-flex gap-4 justify-content-end footer-social-icon">
+              <li>
+                <a href="#">
+                  <i class="fab fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+  
         </div>
       </div>
+     
     </footer>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>

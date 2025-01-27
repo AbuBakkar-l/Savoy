@@ -89,11 +89,11 @@ header {
   width: 410px;
   position: fixed;
   z-index: 111111111;
-  right: 0;
+  right: 0; 
   top: 0;
-  right: -100%;
-  transition: all 0.5s ease-in-out;
+  transition: right 0.5s ease; 
 }
+
 .cart-btn{
   border-bottom: 1px solid #464646;
   padding-right: 15px;
@@ -133,6 +133,111 @@ header {
   bottom: 29px;
   left: 21px;
 }
+ /* cart shopping quntity  */
+ .productImg{
+  width: 60px;
+ }
+ .show-product{
+   display: flex;
+   padding: 25px 0px;
+   gap: 20px;
+ }
+ .productDetail{
+  width: 100%;
+ }
+ .removeProduct > i{
+  color: #a5a5a5;
+  cursor: pointer;
+ }
+ .productDetail .producttitle{
+  padding: 5px 0px;
+  font-family: 'MaisonNeue',sans-serif;
+  margin: 0;
+ }
+ .quntity input[type="number"]{
+  -moz-appearance: textfield;
+  appearance: textfield;
+  width: 20px;
+  color: #a5a5a5;
+  vertical-align: top;
+  padding: 0;
+  border: none;
+  text-align: center;
+  background: none;
+  height: auto;
+  outline: none;
+  position: relative;
+ }
+ .inputdiv::before{
+   content: "\e615";
+  color: #a5a5a5;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+  margin-left: 6px;
+ }
+ .inputdiv::after{
+  content: "\e615";
+ color: #a5a5a5;
+ display: inline-block;
+ font-size: 10px;
+ cursor: pointer;
+ margin-left: 2px;
+}
+ .quntity{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 3px;
+ }
+ .quntity .productNamber{
+  display: flex;
+  align-items: center;
+ }
+ .productNamber > p{
+  color: #a5a5a5;
+ }
+  .down-btns{
+    color: #fff;
+    position: absolute;
+    bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+  }
+  .down-btns > button{
+    border: none;
+    outline: none;
+    border: 1px solid #aaaaaa57;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px;
+  }
+  .down-btns .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #aaaaaa2c;
+    border-bottom: 1px solid #aaaaaa2c;
+    padding: 18px 0px;
+    margin-bottom: 10px;
+  }
+  .total > p{
+    margin: 0;
+  }
+  .down-btns .viewCart-btn:hover{
+    border: 1px solid #aaaaaacb;
+    transition:  border 0.5s ease;
+  }
+  .down-btns .checkout-btn{
+    border: none;
+    background-color: #000;
+    transition: background-color 0.5s ease-in-out;
+  }
+  .down-btns .checkout-btn:hover{
+    background-color: #000000af;
+  }
 /* logIn page  */
 #popup {
     position: fixed;

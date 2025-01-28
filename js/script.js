@@ -24,5 +24,14 @@ $(".close").click(function () {
     }
   );
 });
+const categories = document.getElementById('Categories');
+const subCatMenu = document.querySelector('.sub-cat-menu');
 
+categories.addEventListener('mouseover', () => {
+  subCatMenu.style.display = 'block';
+});
+
+categories.addEventListener('mouseout', () => {
+  subCatMenu.style.display = 'none';
+});
 
